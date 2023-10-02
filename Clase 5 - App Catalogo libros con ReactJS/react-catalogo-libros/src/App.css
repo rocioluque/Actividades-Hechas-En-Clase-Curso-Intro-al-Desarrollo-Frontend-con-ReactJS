@@ -1,0 +1,167 @@
+/* Estilo para el contenedor principal del catálogo */
+.book-gird {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+  gap:30px;
+}
+
+/* Estilo para cada tarjeta de libro en el catálogo */
+.book-card {
+  background-color: #dff5ce;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  width: calc(30% - 30px); /* Ajusta el ancho de las tarjetas según tus preferencias */
+  box-sizing: border-box;
+  text-align: center; /* Centra el contenido en la tarjeta */
+}
+
+/* Estilo para el título del libro */
+.book-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilo para la descripción del libro */
+.book-descripcion{
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el autor del libro */
+.book-autor {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Estilo para la categoría del libro */
+.book-categoria {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Estilo para el encabezado principal del catálogo */
+h1 {
+  font-size: 2em; /* Tamaño de fuente */
+  margin-bottom: 20px; /* Margen inferior para separación */
+  color: #4d6c35; /* Color del texto */
+  text-transform: uppercase; /* Convertir el texto a mayúsculas */
+}
+
+/* Estilo para el menú de navegación */
+.menu {
+  background-color: #333; /* Color de fondo del menú */
+  padding: 10px 0; /* Espaciado interno para el menú */
+}
+
+/* Estilo para la lista de elementos del menú */
+.menu ul {
+  display: flex; /* Alinea los elementos horizontalmente */
+  list-style: none; /* Quita los marcadores de lista */
+  }
+
+/* Estilo para los elementos del menú */
+.menu-item {
+  margin: 0 10px; /* Espaciado entre elementos del menú */
+}
+
+/* Estilo para los enlaces del menú */
+.menu-item a {
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  color: #fff; /* Color del texto de los enlaces */
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px; /* Bordes redondeados para los enlaces */
+  transition: background-color 0.3s ease; /* Transición de color de fondo al pasar el mouse */
+}
+
+/* Estilo para los enlaces del menú al pasar el mouse */
+.menu-item a:hover {
+  background-color: #555; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilo para el contenedor del detalle del libro */
+.detalle-libro {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #dff5ce;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el select personalizado */
+.custom-select {
+  appearance: none; /* Oculta la apariencia predeterminada del select */
+  background-color: #f5f5f5; /* Color de fondo */
+  border: 1px solid #ddd; /* Borde */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  width: 200px; /* Ancho deseado */
+  font-size: 1em; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor al estilo de selección */
+}
+
+/* Estilo para las opciones del select */
+.custom-select option {
+  padding: 10px; /* Espaciado interno de las opciones */
+  font-size: 1em; /* Tamaño de fuente de las opciones */
+  background-color: #f5f5f5; /* Color de fondo de las opciones */
+  border: none; /* Borde de las opciones */
+  border-radius: 0; /* Bordes de las opciones */
+  cursor: pointer; /* Cambia el cursor al estilo de selección en las opciones */
+}
+
+/* Estilo cuando el select está enfocado (opcional) */
+.custom-select:focus {
+  outline: none; /* Quita el contorno de enfoque */
+  border-color: #007bff; /* Color del borde cuando el select está enfocado */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al enfocar el select */
+}
+
+/* Estilo para el contenedor del formulario */
+.formulario-container {
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  align-items: center; /* Centra horizontalmente los elementos */
+  justify-content: center; /* Centra verticalmente los elementos */
+  max-width: 400px; /* Ancho máximo deseado para el contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para los campos del formulario con espacio adicional  (puedes personalizarlos según tus necesidades) */
+.formulario-container input[type="text"],
+.formulario-container textarea {
+  width: 100%;
+  padding: 25px; /* Mayor relleno en comparación con 10px */
+  margin-bottom: 20px; /* Mayor margen inferior en comparación con 10px */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* Estilo para el botón de enviar del formulario (puedes personalizarlo según tus necesidades) */
+.formulario-container button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 10px; /* Mayor relleno en comparación con 10px */
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/* Estilo para el botón de enviar del formulario al pasar el mouse (puedes personalizarlo según tus necesidades) */
+.formulario-container button:hover {
+  background-color: #0056b3;
+}
