@@ -5,6 +5,7 @@ const FormularioAgregarLibro = ({agregarLibro}) => {
 
     const onSubmit = (data) => {
         agregarLibro(data);
+        
     };
 
     return (
@@ -16,7 +17,7 @@ const FormularioAgregarLibro = ({agregarLibro}) => {
                 name="título"
                 {...register("título",{ required: "Este campo es requerido"})}
                 />
-                {errors.título && <span>errors.titulo.message</span>}
+                {errors.título && <span>errors.título.message</span>}
             </div>
             <div >
                 <label htmlFor="descripcion">Descripción: </label>
@@ -25,7 +26,7 @@ const FormularioAgregarLibro = ({agregarLibro}) => {
                 name="descripcion"
                 {...register("descripcion",{ required: "Este campo es requerido"})}
                 />
-                {errors.descripcion && <span>errors.titulo.message</span>}
+                {errors.descripcion && <span>errors.descripcion.message</span>}
             </div>
             <div >
             <label htmlFor="autor">Autor: </label>
@@ -34,7 +35,7 @@ const FormularioAgregarLibro = ({agregarLibro}) => {
                 name="autor"
                 {...register("autor",{ required: "Este campo es requerido"})}
                 />
-                {errors.titulo && <span>errors.titulo.message</span>}
+                {errors.autor && <span>errors.autor.message</span>}
             </div>
             <div >
             <label htmlFor="categoria">Categoría: </label>
@@ -43,7 +44,7 @@ const FormularioAgregarLibro = ({agregarLibro}) => {
                 name="categoria"
                 {...register("categoria",{ required: "Este campo es requerido"})}
                 />
-                {errors.titulo && <span>errors.titulo.message</span>}
+                {errors.categoria && <span>errors.categoria.message</span>}
             </div>
             <button type="submit">Agregar Libro</button>
         </form>

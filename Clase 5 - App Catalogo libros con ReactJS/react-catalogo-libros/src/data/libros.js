@@ -1,5 +1,3 @@
-//Datos de ejemplo
-
 export const libros = [
     {
         id: 1,
