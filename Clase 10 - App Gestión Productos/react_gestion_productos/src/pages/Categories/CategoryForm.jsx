@@ -49,7 +49,7 @@ const CategoryForm = ({ showModal, handleClose, product }) => {
     } else {
       // Creación del producto
       axios
-        .post("https://backend-productos.netlify.app/api/productos", data)
+        .post("https://backend-productos.netlify.app/api/categorias", data)
         .then((response) => {
           console.log(response.data);
           toast.success("La categoria se ha creado correctamente.");
